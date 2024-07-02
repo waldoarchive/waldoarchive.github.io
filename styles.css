@@ -60,6 +60,10 @@ li {
     margin: 10px 0;
 }
 
+.compare img{
+    vertical-align:top;
+}
+
 @media (resolution >=2dppx) {
     .scene img {
         width: 100%;
