@@ -1,6 +1,5 @@
 html,
-body
-{
+body {
     margin: 0;
     padding: 0;
     border: 0;
@@ -61,16 +60,22 @@ li {
     margin: 10px 0;
 }
 
-@media (resolution >= 2dppx) {
-.compare img {
-   zoom: 2;
-}
+@media (resolution >=2dppx) {
+    .scene img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .compare img {
+        zoom: 2;
+    }
+
 }
 
 @media (resolution < 2dppx) {
-.postcard {
-    width: 500px;
-}
+    .postcard {
+        width: 500px;
+    }
 }
 
 img {
@@ -79,33 +84,31 @@ img {
     box-sizing: border-box;
 }
 
-.scene-thumbnail img
-{
-	width: 280px;
+.scene-thumbnail img {
+    width: 280px;
     height: 190px;
-	display: block;
+    display: block;
     opacity: 0.4;
 }
 
-.scene-thumbnail a{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-font-weight: 800;
-color: black;
-font-size: 1.5rem; 
-text-decoration: none;
+.scene-thumbnail a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 
 .scene-thumbnail {
-	display: inline-flex;
- position: relative;
-  text-align: center;
+    display: inline-flex;
+    position: relative;
+    text-align: center;
 }
 
-.panels img
-{
-width: 300px;
+.panels img {
+    width: 300px;
 }
