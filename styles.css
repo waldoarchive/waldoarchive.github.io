@@ -1,18 +1,17 @@
 html,
-body,
-p {
+body
+{
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
 }
 
 html {
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 1080px;
     background-color: #eee;
 }
 
@@ -24,7 +23,7 @@ body {
     margin: 0 0 40px 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -38,14 +37,14 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     margin: 15px 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 15px 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -59,38 +58,48 @@ li {
 }
 
 .compare {
-    margin: 10px;
+    margin: 10px 0;
+}
+
+@media (resolution >= 2dppx) {
+.compare img {
+   zoom: 2;
+}
+}
+
+@media (resolution < 2dppx) {
+.postcard {
+    width: 500px;
+}
 }
 
 img {
-    margin: 5px;
+    padding: 3px;
     max-width: 100%;
+    box-sizing: border-box;
 }
 
-.postcard {
-    width: 450px;
-}
-
-.scene img{
+.scene-thumbnail img
+{
 	width: 280px;
-height: 190px;
+    height: 190px;
 	display: block;
-opacity: 0.4;
+    opacity: 0.4;
 }
 
-.scene a{
+.scene-thumbnail a{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 font-weight: 800;
 color: black;
-font-size: 1.5em;
+font-size: 1.5rem; 
 text-decoration: none;
 }
 
 
-.scene {
+.scene-thumbnail {
 	display: inline-flex;
  position: relative;
   text-align: center;
