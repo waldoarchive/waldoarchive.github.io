@@ -12,7 +12,7 @@ p {
 
 html {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 980px;
     background-color: #eee;
 }
 
@@ -68,5 +68,35 @@ img {
 }
 
 .postcard {
-    width: 500px;
+    width: 450px;
+}
+
+.scene img{
+	width: 280px;
+height: 190px;
+	display: block;
+opacity: 0.4;
+}
+
+.scene a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+font-weight: 800;
+color: black;
+font-size: 1.5em;
+text-decoration: none;
+}
+
+
+.scene {
+	display: inline-flex;
+ position: relative;
+  text-align: center;
+}
+
+.panels img
+{
+width: 300px;
 }
