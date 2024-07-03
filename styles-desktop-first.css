@@ -1,0 +1,11 @@
+@media (resolution >=2dppx) {
+    .compare img {
+        zoom: 2;
+    }
+}
+
+@media (resolution < 2dppx) {
+    .postcard {
+        width: 500px;
+    }
+}

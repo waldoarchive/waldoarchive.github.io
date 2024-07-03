@@ -1,0 +1,10 @@
+@media (resolution < 2dppx) {
+    .compare img {
+        zoom: 0.5;
+        padding: 6px;
+    }
+
+    .postcard {
+        width: 1000px;
+    }
+}
